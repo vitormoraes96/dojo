@@ -2,11 +2,15 @@ export default (numbers) => {
   let sumNumber = 0;
   const listNumbers = numbers.split("");
 
-  listNumbers.map((number, i) => {
-    sumNumber =
-      numbersRoman[listNumbers[i + 1]] > numbersRoman[number]
-        ? sumNumber - numbersRoman[number]
-        : sumNumber + numbersRoman[number];
+  listNumbers.map((roman, i) => {
+    let count;
+    const number = numbersRoman[roman];
+
+    if (numbersRoman[listNumbers[i - 1]] >= number)
+      return (sumNumber += number);
+
+    count = number - sumNumber;
+    sumNumber = count;
   });
 
   return sumNumber;
