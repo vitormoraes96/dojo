@@ -16,4 +16,8 @@ describe("Roman Numbers", () => {
   it("must insert VI and return 6", () => {
     expect(romanNumbers("VI")).toBe(6);
   });
+
+  it("must insert IV and return 4", () => {
+    expect(romanNumbers("IV")).toBe(4);
+  });
 });
