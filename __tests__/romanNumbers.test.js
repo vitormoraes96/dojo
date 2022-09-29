@@ -40,4 +40,24 @@ describe("Roman Numbers", () => {
   it("must insert VIII and return 8", () => {
     expect(romanNumbers("VIII")).toBe(8);
   });
+
+  it("must insert LXII  and return 62", () => {
+    expect(romanNumbers("LXII")).toBe(62);
+  });
+
+  it("must insert CLVIII and return 158", () => {
+    expect(romanNumbers("CLVIII")).toBe(158);
+  });
+
+  it("must insert MCXX and return 1120", () => {
+    expect(romanNumbers("MCXX")).toBe(1120);
+  });
+
+  it("must insert IX  and return 9", () => {
+    expect(romanNumbers("IX")).toBe(9);
+  });
+
+  it("must insert XC  and return 90", () => {
+    expect(romanNumbers("XC")).toBe(90);
+  });
 });
