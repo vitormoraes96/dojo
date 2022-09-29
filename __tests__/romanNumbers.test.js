@@ -60,4 +60,7 @@ describe("Roman Numbers", () => {
   it("must insert XC  and return 90", () => {
     expect(romanNumbers("XC")).toBe(90);
   });
+  it("must insert XXC  and return 80", () => {
+    expect(romanNumbers("XXC")).toBe(80);
+  });
 });
